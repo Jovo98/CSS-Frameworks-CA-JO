@@ -4,7 +4,7 @@
   "description": "CSS frameworks CA",
   "main": "src/main.js",
   "scripts": {
-    "compile:sass": "sass scss:assets/css",
+    "compile:sass": "sass scss:src/assets/css",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
