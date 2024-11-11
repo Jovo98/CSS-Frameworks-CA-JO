@@ -2,7 +2,7 @@
   "name": "css-frameworks-ca-jo",
   "version": "1.0.0",
   "description": "CSS frameworks CA",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "compile:sass": "sass scss:assets/css",
     "dev": "vite",
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.9.0",
     "bootstrap": "^5.3.3",
     "sass": "1.77.6",
     "vite": "^5.4.10"

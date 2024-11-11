@@ -1,15 +1,19 @@
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
+const root = resolve(__dirname, 'src')
+const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
+   root,
     build: {
+       outDir,
+        emptyOutDir: true,
         rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'index.html'),
-                feed: resolve(__dirname, 'feed.html'),
-                profile: resolve(__dirname, 'profile.html'),
-            },
-        },
-    },
+           input: {
+               main: resolve(root, 'index.html'),
+               feed: resolve(root, 'feed', 'index.html'),
+               profile: resolve(root, 'profile', 'index.html'),
+           }
+        }
+    }
 })
