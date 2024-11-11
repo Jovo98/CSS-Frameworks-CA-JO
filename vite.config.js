@@ -10,9 +10,9 @@ export default defineConfig({
         emptyOutDir: true,
         rollupOptions: {
            input: {
-               main: resolve(root, 'profile.html'),
-               feed: resolve(root, 'feed', 'profile.html'),
-               profile: resolve(root, 'profile', 'profile.html'),
+               main: resolve(root, 'index.html'),
+               feed: resolve(root, 'feed.html'),
+               profile: resolve(root, 'profile.html'),
            }
         }
     }
