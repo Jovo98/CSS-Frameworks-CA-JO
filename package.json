@@ -2,7 +2,7 @@
   "name": "css-frameworks-ca-jo",
   "version": "1.0.0",
   "description": "CSS frameworks CA",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "compile:sass": "sass scss:assets/css",
     "dev": "vite",
